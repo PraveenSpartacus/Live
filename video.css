@@ -27,6 +27,7 @@ body{
     top: 50%;
     transform: translate(-50%,-50%);
     height: fit-content;
+    height: 55vw;
     max-height: 460px;
 }
 .heading{
@@ -72,7 +73,7 @@ body{
 
 @media only screen and (max-width: 600px){
     .uline{
-        width: 90%;
+        display: none;
     }
     .none{
         display: none;
