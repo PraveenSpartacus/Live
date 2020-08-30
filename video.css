@@ -3,9 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+body{
+    /* background-image: linear-gradient(45deg, #2a9adbbd,#2b32b2bb); */
+    background-color: white;
+}
 .video{
-    background-color: burlywood;
+    /* background-color: burlywood; */
     width: calc(100vw - calc(100vw - 100%));
     height: 100vh;
     position: relative;
@@ -23,4 +26,73 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+    height: fit-content;
+    max-height: 460px;
+}
+.heading{
+    position: absolute;
+    top: 7vh;
+    width: 100%;
+}
+.heading h1{
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Dancing Script', cursive;
+    color: #dab900;
+}
+
+.weds{
+    position: absolute;
+    bottom: 10vh;
+    font-family: 'Dancing Script', cursive;
+    color: #dab900;
+    width: 100%;
+}
+.weds h1{
+    width: 100%;
+    text-align: center;
+}
+.weds h1 span{
+    font-size: 40px;
+}
+.ucontainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+}
+.uline{
+    width: 30%;
+}
+
+.down img{
+    transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 600px){
+    .uline{
+        width: 90%;
+    }
+    .none{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 600px){
+    .weds h1 span{
+        font-size: 50px;
+    }
+    .heading h1{
+        font-size: 55px;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .weds h1 span{
+        font-size: 30px;
+    }
+    .heading h1{
+        font-size: 35px;
+    }
 }

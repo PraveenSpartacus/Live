@@ -4,15 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="video.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon"  href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <title>Live Streaming</title>
 </head>
 <body>
     <div class="video">
-        <img class="svgbg" src="/svgbg.svg" alt="">
-        <div class="iframe">
+        <!-- <img class="svgbg" src="/svgbg.svg" alt=""> -->
+        <div id="iframe" class="iframe">
         <iframe id="vidlive-embed-2986" src="https://www.vidlive.co/iframe/2986" style="width:100%;height:100%;border:none;overflow: hidden;" allowTransparency="true" allowfullscreen="true"></iframe><script>window.addEventListener('message', function(e) { if(e.data[0] == 'setHeight-2986') { document.getElementById('vidlive-embed-2986').style.height = e.data[1] + "px"; } }, false);</script>    
         </div>
+        <div class="heading">
+            <h1>Enapanuri's Wedding Occasion</h1>
+        </div>
+        
+        <div class="weds">
+            <h1><span>Bhagya Lakshmi Devi</span>  weds <span>Sivarama Krishna</span></h1>
+        </div>
+
+        <div style="top: 0;" class="ucontainer">
+            <img class="uline" src="/uline-removebg-preview.png" alt="">
+            <img class="uline none" src="/uline-removebg-preview.png" alt="">
+            <img class="uline none" src="/uline-removebg-preview.png" alt="">
+        </div>
+        <div style="bottom: 0;" class="ucontainer down">
+            <img class="uline" src="/uline-removebg-preview.png" alt="">
+            <img class="uline none" src="/uline-removebg-preview.png" alt="">
+            <img class="uline none" src="/uline-removebg-preview.png" alt="">
+        </div>
     </div>
+    <script>
+        // setInterval(
+        //     function(){
+        //         iframe = document.getElementById("iframe");
+        //         iframe.style.top = "50%";
+        //         console.log("works")
+        //     },100
+        // )
+    </script>
 </body>
 </html>
